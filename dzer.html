@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dzēriens</title>
+
+<script>
+
+function cena(){
+let d = document.getElementById("dz").value;
+document.getElementById("rez").innerHTML = "Cena: " + d + " €";
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h2>Dzēriena cena</h2>
+
+<select id="dz">
+<option value="2">Kafija</option>
+<option value="1.5">Tēja</option>
+<option value="3">Sula</option>
+</select>
+
+<button onclick="cena()">Parādīt cenu</button>
+
+<p id="rez"></p>
+
+</body>
+</html>
