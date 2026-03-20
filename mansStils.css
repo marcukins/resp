@@ -1,0 +1,20 @@
+body{
+background-image: url("IMG/orange.webp");
+background-size: cover;
+color: blue;
+font-family: Arial;
+padding: 20px;
+text-align: left;
+}
+
+h1{
+color: black;
+}
+
+h2{
+color: darkblue;
+}
+
+img{
+border: 3px solid white;
+}
