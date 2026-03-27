@@ -1,15 +1,29 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Baiti</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <script>
+            function clearFields() {
+            document.getElementById("ab").value=""
+            document.getElementById("cd").value=""
+        }
+        </script>
     </head>
     <body>
-        <div>TODO write content</div>
+        <form>
+            <label for="ab">Aprēķinat cik daudz informācijas var lejupielādēt</label><br>
+            <input type="text" id="ab" name="ab" onclick="clearFields()"> sekundēs, ja interneta ātrums ir 25Mbps.<br><br>
+           
+            <label for="cd">Atbilde</label><br><br>
+            <input type="text" id="cd" name="cd">
+           
+            <input type="radio" id="abx" onclick="cd.value=3052*ab.value" name="a" value="abk">
+            <label for="html">KiB</label>
+           
+            <input type="radio" id="aby" name="a" onclick="cd.value=3125*ab.value" value="abk">
+            <label for="html">KB</label>
+        </form>
     </body>
 </html>
